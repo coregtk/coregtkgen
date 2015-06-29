@@ -1,0 +1,38 @@
+{
+	CGTKApplication = (
+		"\"CoreGTK/CGTKWindow.h\""
+	);
+	CGTKClipboard = (
+		"\"CoreGTK/CGTKTextBuffer.h\""
+	);
+	CGTKContainer = (
+		"\"CoreGTK/CGTKAdjustment.h\""
+	);
+	CGTKMenuButton = (
+		"\"CoreGTK/CGTKMenu.h\""
+	);
+	CGTKSettings = (
+	);
+	CGTKStyleContext = (
+	);
+	CGTKTextBuffer = (
+		"\"CoreGTK/CGTKTextChildAnchor.h\"",
+		"\"CoreGTK/CGTKTextTag.h\"",
+		"\"CoreGTK/CGTKTextTagTable.h\"",
+		"\"CoreGTK/CGTKTextMark.h\""
+	);
+	CGTKTextMark = (
+		
+	);
+    CGTKWidget = (
+    	"\"CoreGTK/CGTKAccelGroup.h\"", 
+    	"\"CoreGTK/CGTKClipboard.h\"",
+    	"\"CoreGTK/CGTKRcStyle.h\"",
+    	"\"CoreGTK/CGTKSettings.h\"",
+    	"\"CoreGTK/CGTKStyle.h\"",
+    	"\"CoreGTK/CGTKStyleContext.h\""
+	);
+    CGTKWindow = (
+    	"\"CoreGTK/CGTKWindowGroup.h\""
+	);
+}

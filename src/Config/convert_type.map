@@ -1,0 +1,22 @@
+{
+    "const gchar*" = {
+	NSString* = "[NSString stringWithUTF8String:%@]";
+    };
+    
+    BOOL = {
+    gboolean = "(%@ ? TRUE : FALSE)";
+    };
+    
+    gboolean = {
+    BOOL = "(%@ ? YES : NO)";
+    };
+    
+    gchar* = {
+    NSString* = "[NSString stringWithUTF8String:%@]";
+    };
+    
+    NSString* = {
+    "gchar*" = "[%@ UTF8String]";
+    "const gchar*" = "[%@ UTF8String]";
+    };
+}
