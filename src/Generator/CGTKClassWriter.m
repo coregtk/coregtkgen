@@ -39,6 +39,16 @@
 {
 	NSError *error = nil;
 	
+	BOOL isDir;
+	NSFileManager *fileManager= [NSFileManager defaultManager]; 
+	if(![fileManager fileExistsAtPath:outputDir isDirectory:&isDir])
+	{
+		if(![fileManager createDirectoryAtPath:outputDir withIntermediateDirectories:YES attributes:nil error:NULL])
+		{
+		    NSLog(@"Error creating output directory: %@", outputDir);
+		}
+	}
+	
 	// Header
 	NSString *hFilename = [[outputDir stringByAppendingPathComponent:[cgtkClass name]] stringByAppendingPathExtension:@"h"];
 		
@@ -280,7 +290,7 @@
 +(NSString *)generateLicense:(NSString *)fileName
 {
 	NSError *error = nil;
-	NSString *licText = [NSString stringWithContentsOfFile:@"conf/license.txt" encoding:NSStringEncodingConversionAllowLossy error:&error];
+	NSString *licText = [NSString stringWithContentsOfFile:@"Config/license.txt" encoding:NSStringEncodingConversionAllowLossy error:&error];
 	
 	if(error == nil)
 	{

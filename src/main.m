@@ -110,17 +110,20 @@ int main(int argc, char *argv[])
 
 						if([fileMgr fileExistsAtPath:dest])
 						{
-							NSLog(@"File [%@] already exists in destination [%@]", src, dest);
-						}
-						else
-						{
-							NSLog(@"Copying file [%@] to [%@]...", src, dest);
-							if(![fileMgr copyItemAtPath:src
-												    toPath:dest
-												     error:&error])
+							NSLog(@"File [%@] already exists in destination [%@]. Removing existing file...", src, dest);
+							if(![fileMgr removeItemAtPath:dest error:&error])
 							{
-								NSLog(@"Error: %@", error);
+								NSLog(@"Error removing file [%@]: %@. Skipping file.", dest, error);
+								continue;
 							}
+						}
+						
+						NSLog(@"Copying file [%@] to [%@]...", src, dest);
+						if(![fileMgr copyItemAtPath:src
+											    toPath:dest
+											     error:&error])
+						{
+							NSLog(@"Error: %@", error);
 						}
 					}
 				}
