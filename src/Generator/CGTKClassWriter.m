@@ -120,13 +120,14 @@
 		}
 	}
 	
-	[output appendString:@"\n/**\n * Methods\n */\n"];
+	[output appendString:@"\n/**\n * Methods\n */\n\n"];
 	
 	// Self type method declaration
 	[output appendFormat:@"-(%@*)%@;\n", [cgtkClass cType], [[cgtkClass cName] uppercaseString]];
 	
 	for(CGTKMethod *meth in [cgtkClass methods])
 	{
+		[output appendFormat:@"\n%@\n", [CGTKClassWriter generateDocumentationForMethod:meth]];
 		[output appendFormat:@"-(%@)%@;\n", [meth returnType], [meth sig]];
 	}
 	
@@ -301,6 +302,35 @@
 		NSLog(@"Error reading license file: %@", error);
 		return nil;
 	}
+}
+
++(NSString *)generateDocumentationForMethod:(CGTKMethod *)meth
+{
+	int i;
+	CGTKParameter *p = nil;
+	
+	NSMutableString *doc = [[NSMutableString alloc] init];
+	
+	[doc appendFormat:@"/**\n * -(%@*)%@;\n *\n", [meth returnType], [meth sig]];
+	
+	if([meth.parameters count] > 0)
+	{		
+		for(i = 0; i < [meth.parameters count]; i++)
+		{
+			p = [meth.parameters objectAtIndex:i];
+		
+			[doc appendFormat:@" * @param %@\n", [p name]];			
+		}
+	}
+	
+	if(![meth returnsVoid])
+	{
+		[doc appendFormat:@" * @returns %@\n", [meth returnType]];
+	}
+	
+	[doc appendString:@" */"];
+	
+	return [doc autorelease];
 }
 
 @end

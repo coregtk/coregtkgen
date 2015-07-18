@@ -68,4 +68,9 @@
  */
 +(NSString *)generateLicense:(NSString *)fileName;
 
+/**
+ * Uses the information in the method to return documentation for the method
+ */
++(NSString *)generateDocumentationForMethod:(CGTKMethod *)meth;
+
 @end
