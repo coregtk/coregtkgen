@@ -38,6 +38,7 @@ static NSMutableDictionary *dictConvertType;
 static NSMutableDictionary *dictGlobalConf;
 static NSMutableDictionary *dictSwapTypes;
 static NSMutableDictionary *dictExtraImports;
+static NSMutableDictionary *dictExtraMethods;
 
 +(NSString *)convertUSSToCamelCase:(NSString *)input
 {
@@ -274,6 +275,16 @@ static NSMutableDictionary *dictExtraImports;
 	}
 	
 	return [dictExtraImports objectForKey:clazz];
+}
+
++(NSDictionary *)extraMethods:(NSString *)clazz
+{
+	if(dictExtraMethods == nil)
+	{
+		dictExtraMethods = [[NSMutableDictionary alloc] initWithContentsOfFile:@"Config/extra_methods.map"];
+	}
+	
+	return [dictExtraMethods objectForKey:clazz];
 }
 
 @end

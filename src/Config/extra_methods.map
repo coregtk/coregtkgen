@@ -1,0 +1,75 @@
+{
+
+GtkContainer = {
+
+"-(void)addWidget:(CGTKWidget *)widget withProperties:(NSDictionary *)properties" =
+"{
+	for(NSString *propName in properties)
+	{
+		gtk_container_child_set_property([self CONTAINER], [widget WIDGET], [propName UTF8String], [properties objectForKey:propName]);
+	}
+}";
+
+};
+
+GtkDialog = {
+
+"-(id)initWithTitle:(NSString *)title andParent:(CGTKWindow *)parent andFlags:(GtkDialogFlags)flags andButtonTextResponseDictionary:(NSDictionary *)buttonTextDict" = 
+"{
+	self = [super initWithGObject:(GObject *)gtk_dialog_new_with_buttons([title UTF8String], [parent WINDOW], flags, NULL, NULL)];
+
+	if(self)
+	{
+		for(NSString *text in buttonTextDict)
+		{
+			[self addButtonWithButtonText:text andResponseId:[buttonTextDict objectForKey:text]];
+		}
+	}
+
+	return self;
+}";
+
+"-(void)addButtons:(NSDictionary *)buttonTextDict" = 
+"{
+	for(NSString *text in buttonTextDict)
+	{
+		[self addButtonWithButtonText:text andResponseId:[buttonTextDict objectForKey:text]];
+	}
+}";
+
+"-(void)setAlternativeButtonOrder:(NSArray *)newOrder" = 
+"{
+	gint numParams = [newOrder count];
+	gint newOrderArray[numParams];
+	int i = 0;
+	
+	for(i = 0; i < numParams; i++)
+	{
+		newOrderArray[i] = [newOrder objectAtIndex:i];
+	}
+	
+	gtk_dialog_set_alternative_button_order_from_array([self DIALOG], numParams, newOrderArray);
+}";
+
+};
+
+GtkFileChooserDialog = {
+
+"-(id)initWithTitle:(NSString *)title andParent:(CGTKWindow *)parent andAction:(GtkFileChooserAction)action andButtonTextResponseDictionary:(NSDictionary *)buttonTextDict" = 
+"{
+	self = [super initWithGObject:(GObject *)gtk_file_chooser_dialog_new([title UTF8String], [parent WINDOW], action, NULL, NULL)];
+
+	if(self)
+	{
+		for(NSString *text in buttonTextDict)
+		{
+			[self addButtonWithButtonText:text andResponseId:[buttonTextDict objectForKey:text]];
+		}
+	}
+
+	return self;
+}";
+
+};
+
+}
