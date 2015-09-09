@@ -4,9 +4,12 @@ GtkContainer = {
 
 "-(void)addWidget:(CGTKWidget *)widget withProperties:(NSDictionary *)properties" =
 "{
+	CGTKTypeWrapper *wrapper;
 	for(NSString *propName in properties)
 	{
-		gtk_container_child_set_property([self CONTAINER], [widget WIDGET], [propName UTF8String], [properties objectForKey:propName]);
+		wrapper = [properties objectForKey:propName];
+		
+		gtk_container_child_set_property([self CONTAINER], [widget WIDGET], [propName UTF8String], [wrapper asGValuePtr]);
 	}
 }";
 
@@ -20,9 +23,12 @@ GtkDialog = {
 
 	if(self)
 	{
+		CGTKTypeWrapper *wrapper;
 		for(NSString *text in buttonTextDict)
 		{
-			[self addButtonWithButtonText:text andResponseId:[buttonTextDict objectForKey:text]];
+			wrapper = [buttonTextDict objectForKey:text];
+			
+			[self addButtonWithButtonText:text andResponseId:wrapper.gintValue];
 		}
 	}
 
@@ -31,24 +37,13 @@ GtkDialog = {
 
 "-(void)addButtons:(NSDictionary *)buttonTextDict" = 
 "{
+	CGTKTypeWrapper *wrapper;
 	for(NSString *text in buttonTextDict)
 	{
-		[self addButtonWithButtonText:text andResponseId:[buttonTextDict objectForKey:text]];
+		wrapper = [buttonTextDict objectForKey:text];
+		
+		[self addButtonWithButtonText:text andResponseId:wrapper.gintValue];
 	}
-}";
-
-"-(void)setAlternativeButtonOrder:(NSArray *)newOrder" = 
-"{
-	gint numParams = [newOrder count];
-	gint newOrderArray[numParams];
-	int i = 0;
-	
-	for(i = 0; i < numParams; i++)
-	{
-		newOrderArray[i] = [newOrder objectAtIndex:i];
-	}
-	
-	gtk_dialog_set_alternative_button_order_from_array([self DIALOG], numParams, newOrderArray);
 }";
 
 };
@@ -61,13 +56,132 @@ GtkFileChooserDialog = {
 
 	if(self)
 	{
+		CGTKTypeWrapper *wrapper;
+		
 		for(NSString *text in buttonTextDict)
 		{
-			[self addButtonWithButtonText:text andResponseId:[buttonTextDict objectForKey:text]];
+			wrapper = [buttonTextDict objectForKey:text];
+			
+			[self addButtonWithButtonText:text andResponseId:wrapper.gintValue];
 		}
 	}
 
 	return self;
+}";
+
+};
+
+GtkMessageDialog = {
+
+"-(id)initWithParent:(CGTKWindow *)parent andFlags:(GtkDialogFlags)flags andType:(GtkMessageType)type andButtons:(GtkButtonsType)buttons andMessage:(NSString *)message" = 
+"{
+	self = [super initWithGObject:(GObject *)gtk_message_dialog_new([parent WINDOW], flags, type, buttons, [message UTF8String], NULL)];
+
+	if(self)
+	{
+		// Do nothing
+	}
+
+	return self;
+}";
+
+"-(id)initWithParent:(CGTKWindow *)parent andFlags:(GtkDialogFlags)flags andType:(GtkMessageType)type andButtons:(GtkButtonsType)buttons andMarkup:(NSString *)markup" = 
+"{
+	self = [super initWithGObject:(GObject *)gtk_message_dialog_new_with_markup([parent WINDOW], flags, type, buttons, [markup UTF8String], NULL)];
+
+	if(self)
+	{
+		// Do nothing
+	}
+
+	return self;
+}";
+
+"-(void)formatSecondaryText:(NSString *)message" = 
+"{
+	gtk_message_dialog_format_secondary_text([self MESSAGEDIALOG], [message UTF8String], NULL);
+}";
+
+"-(void)formatSecondaryMarkup:(NSString *)markup" = 
+"{
+	gtk_message_dialog_format_secondary_markup([self MESSAGEDIALOG], [markup UTF8String], NULL);
+}";
+
+};
+
+GtkRecentChooserDialog = {
+
+"-(id)initWithTitle:(NSString *)title andParent:(CGTKWindow *)parent andButtonTextResponseDictionary:(NSDictionary *)buttonTextDict" = 
+"{
+	self = [super initWithGObject:(GObject *)gtk_recent_chooser_dialog_new([title UTF8String], [parent WINDOW], NULL, NULL)];
+
+	if(self)
+	{
+		CGTKTypeWrapper *wrapper;
+		
+		for(NSString *text in buttonTextDict)
+		{
+			wrapper = [buttonTextDict objectForKey:text];
+			
+			[self addButtonWithButtonText:text andResponseId:wrapper.gintValue];
+		}
+	}
+
+	return self;
+}";
+
+"-(id)initForManagerWithTitle:(NSString *)title andParent:(CGTKWindow *)parent andManager:(GtkRecentManager*)manager andButtonTextResponseDictionary:(NSDictionary *)buttonTextDict" = 
+"{
+	self = [super initWithGObject:(GObject *)gtk_recent_chooser_dialog_new_for_manager([title UTF8String], [parent WINDOW], manager, NULL, NULL)];
+
+	if(self)
+	{
+		CGTKTypeWrapper *wrapper;
+		
+		for(NSString *text in buttonTextDict)
+		{
+			wrapper = [buttonTextDict objectForKey:text];
+			
+			[self addButtonWithButtonText:text andResponseId:wrapper.gintValue];
+		}
+	}
+
+	return self;
+}";
+
+};
+
+GtkInfoBar = {
+
+"-(id)initWithButtonTextResponseDictionary:(NSDictionary *)buttonTextDict" = 
+"{
+	self = [super initWithGObject:(GObject *)gtk_info_bar_new()];
+
+	if(self)
+	{
+		CGTKTypeWrapper *wrapper;
+		
+		for(NSString *text in buttonTextDict)
+		{
+			wrapper = [buttonTextDict objectForKey:text];
+			
+			[self addButtonWithButtonText:text andResponseId:wrapper.gintValue];
+		}
+	}
+
+	return self;
+}";
+
+"-(void)addButtonTextResponseDictionary:(NSDictionary *)buttonTextDict" = 
+"{
+	CGTKTypeWrapper *wrapper;
+	
+	for(NSString *text in buttonTextDict)
+	{
+		wrapper = [buttonTextDict objectForKey:text];
+		
+		[self addButtonWithButtonText:text andResponseId:wrapper.gintValue];
+	}
 }";
 
 };
