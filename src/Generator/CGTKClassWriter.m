@@ -125,6 +125,16 @@
 	// Self type method declaration
 	[output appendFormat:@"-(%@*)%@;\n", [cgtkClass cType], [[cgtkClass cName] uppercaseString]];
 	
+	NSDictionary *extraMethods = [CGTKUtil extraMethods:[cgtkClass type]];
+	
+	if(extraMethods != nil)
+	{
+		for(NSString *m in extraMethods)
+		{			
+			[output appendFormat:@"\n%@;\n", m];
+		}
+	}
+	
 	for(CGTKMethod *meth in [cgtkClass methods])
 	{
 		[output appendFormat:@"\n%@\n", [CGTKClassWriter generateDocumentationForMethod:meth]];
@@ -180,6 +190,16 @@
 		}
 		
 		[output appendString:@"}\n\n"];
+	}
+	
+	NSDictionary *extraMethods = [CGTKUtil extraMethods:[cgtkClass type]];
+	
+	if(extraMethods != nil)
+	{
+		for(NSString *m in extraMethods)
+		{			
+			[output appendFormat:@"%@\n%@\n\n", m, [extraMethods objectForKey:m]];
+		}
 	}
 	
 	// Constructor implementations

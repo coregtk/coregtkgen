@@ -95,6 +95,11 @@
 +(NSArray *)extraImports:(NSString *)clazz;
 
 /**
+ * Gets a list of extra methods for the class
+ */
++(NSDictionary *)extraMethods:(NSString *)clazz;
+
+/**
  * Returns the configuration value for the provided key
  */
 +(id)globalConfigValueFor:(NSString *)key;

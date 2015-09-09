@@ -1,5 +1,5 @@
 /*
- * CGTKBase.h
+ * CGTKTypeWrapper.h
  * This file is part of CoreGTK
  *
  * Copyright (C) 2015 - Tyler Burton
@@ -29,67 +29,25 @@
 /*
  * Objective-C imports
  */
-#import <Foundation/Foundation.h>
-#import "CGTKTypeWrapper.h"
-
-/*
- * C imports
- */
+#import <Foundation/NSObject.h>
 #import <gtk/gtk.h>
 
 /**
- * The base class for all CoreGTK wrapper classes
+ * Provides functions for wrapping GTK types
  */
-@interface CGTKBase : NSObject
+@interface CGTKTypeWrapper : NSObject
 {
-	/**
-	 * The internal GtkObject pointer
-	 */
-	GObject *__gObject;
+	void* ptrValue;
+	gint gintValue;
 }
 
-/**
- * Returns a new instance of CGTKBase with the internal GObject set to obj
- *
- * Note: the returned object is autoreleased
- *
- * @param obj
- * 	The internal GObject to use
- *
- * @returns a new CGTKBase
- */
-+(CGTKBase *)withGObject:(GObject *)obj;
+@property (nonatomic) gint gintValue;
 
 /**
- * Returns a new instance of CGTKBase with the internal GObject set to obj
+ * Returns the stored ptrValue as a GValue*
  *
- * @param obj
- * 	The internal GObject to use
- *
- * @returns a new CGTKBase
+ * @returns GValue*
  */
--(id)initWithGObject:(GObject *)obj;
-
-/**
- * Gets the internal GtkWidget
- *
- * @returns the internal GtkWidget
- */
--(GtkWidget *)WIDGET;
-
-/**
- * Sets the internal GObject
- *
- * @param obj
- * 	The GObject to set internally
- */
--(void)setGObject:(GObject *)obj;
-
-/**
- * Gets the internal GObject
- *
- * @returns the internal GObject
- */
--(GObject *)GOBJECT;
+-(const GValue*)asGValuePtr;
 
 @end
