@@ -176,23 +176,31 @@ static NSMutableDictionary *dictExtraMethods;
 	{
 		NSMutableString *result = [[NSMutableString alloc] init];
 		
-		// Special logic for things like GtkHSV
-		int countBetweenUnderscores = 0;
-		
-		for(i = 0; i < [type length]; i++)
+		// Special logic for GTK_GL_AREA
+		if([type isEqualToString:@"GtkGLArea"])
 		{
-			// Current character				
-			NSString *currentChar = [type substringWithRange:NSMakeRange(i,1)];
+			[result appendString:@"GTK_GL_AREA"];
+		}
+		else
+		{
+			// Special logic for things like GtkHSV
+			int countBetweenUnderscores = 0;
+		
+			for(i = 0; i < [type length]; i++)
+			{
+				// Current character				
+				NSString *currentChar = [type substringWithRange:NSMakeRange(i,1)];
 			
-			if(i != 0 && [[NSCharacterSet uppercaseLetterCharacterSet] characterIsMember:[currentChar characterAtIndex:0]] && countBetweenUnderscores > 1)
-			{
-				[result appendFormat:@"_%@", [currentChar uppercaseString]];
-				countBetweenUnderscores = 0;
-			}
-			else
-			{
-				[result appendString:[currentChar uppercaseString]];
-				countBetweenUnderscores++;
+				if(i != 0 && [[NSCharacterSet uppercaseLetterCharacterSet] characterIsMember:[currentChar characterAtIndex:0]] && countBetweenUnderscores > 1)
+				{
+					[result appendFormat:@"_%@", [currentChar uppercaseString]];
+					countBetweenUnderscores = 0;
+				}
+				else
+				{
+					[result appendString:[currentChar uppercaseString]];
+					countBetweenUnderscores++;
+				}
 			}
 		}
 		
