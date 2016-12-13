@@ -92,7 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><code>#import &lt;<a class="el" href="CGTKSignalConnector_8h_source.html">CGTKSignalConnector.h</a>&gt;</code></p>
+<p><code>#import &lt;<a class="el" href="BaseClasses_2CGTKSignalConnector_8h_source.html">CGTKSignalConnector.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for CGTKSignalConnector:</div>
 <div class="dyncontent">
@@ -104,6 +104,8 @@ Inheritance diagram for CGTKSignalConnector:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Class Methods</h2></td></tr>
+<tr class="memitem:a0c5ffb2b2bfaa4766fbb9ca935eaaa9f"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interfaceCGTKSignalConnector.html#a0c5ffb2b2bfaa4766fbb9ca935eaaa9f">connectGpointer:withSignal:toTarget:withSelector:andData:</a></td></tr>
+<tr class="separator:a0c5ffb2b2bfaa4766fbb9ca935eaaa9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c5ffb2b2bfaa4766fbb9ca935eaaa9f"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interfaceCGTKSignalConnector.html#a0c5ffb2b2bfaa4766fbb9ca935eaaa9f">connectGpointer:withSignal:toTarget:withSelector:andData:</a></td></tr>
 <tr class="separator:a0c5ffb2b2bfaa4766fbb9ca935eaaa9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -166,13 +168,69 @@ Class Methods</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a0c5ffb2b2bfaa4766fbb9ca935eaaa9f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) connectGpointer: </td>
+          <td></td>
+          <td class="paramtype">(gpointer)&#160;</td>
+          <td class="paramname"><em>object</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">withSignal:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>name</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">toTarget:</td>
+          <td></td>
+          <td class="paramtype">(id)&#160;</td>
+          <td class="paramname"><em>target</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">withSelector:</td>
+          <td></td>
+          <td class="paramtype">(SEL)&#160;</td>
+          <td class="paramname"><em>selector</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">andData:</td>
+          <td></td>
+          <td class="paramtype">(gpointer)&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Connects a GCallback function to a signal for a particular object. The GCallback function redirects the call to the Objective-C target and selector.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>The instance to connect to</td></tr>
+    <tr><td class="paramname">name</td><td>The signal name to connect (a string in the form of "signal-name::detail"</td></tr>
+    <tr><td class="paramname">target</td><td>The Objective-C class to callback to</td></tr>
+    <tr><td class="paramname">sel</td><td>The selector</td></tr>
+    <tr><td class="paramname">data</td><td>The data to pass to c_handler calls</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a new <a class="el" href="interfaceCGTKCallbackData.html">CGTKCallbackData</a> </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="CGTKSignalConnector_8h_source.html">CGTKSignalConnector.h</a></li>
+<li><a class="el" href="BaseClasses_2CGTKSignalConnector_8h_source.html">BaseClasses/CGTKSignalConnector.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 12 2016 19:54:26 for CoreGTKGen by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 12 2016 20:57:37 for CoreGTKGen by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
