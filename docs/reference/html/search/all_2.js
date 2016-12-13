@@ -10,6 +10,7 @@ var searchData=
   ['cgtkparameter',['CGTKParameter',['../interfaceCGTKParameter.html',1,'']]],
   ['cgtksignalconnector',['CGTKSignalConnector',['../interfaceCGTKSignalConnector.html',1,'']]],
   ['cgtksignaldata',['CGTKSignalData',['../interfaceCGTKSignalData.html',1,'']]],
+  ['cgtktypewrapper',['CGTKTypeWrapper',['../interfaceCGTKTypeWrapper.html',1,'']]],
   ['cgtkutil',['CGTKUtil',['../interfaceCGTKUtil.html',1,'']]],
   ['connectgpointer_3awithsignal_3atotarget_3awithselector_3aanddata_3a',['connectGpointer:withSignal:toTarget:withSelector:andData:',['../interfaceCGTKSignalConnector.html#a0c5ffb2b2bfaa4766fbb9ca935eaaa9f',1,'CGTKSignalConnector']]],
   ['connectsignalstoobjectswithbuilder_3aandsignaldictionary_3a',['connectSignalsToObjectsWithBuilder:andSignalDictionary:',['../interfaceCGTKBaseBuilder.html#a79274c18326ae2ec031a70cc70e8c2a0',1,'CGTKBaseBuilder']]],

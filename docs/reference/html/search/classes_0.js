@@ -10,5 +10,6 @@ var searchData=
   ['cgtkparameter',['CGTKParameter',['../interfaceCGTKParameter.html',1,'']]],
   ['cgtksignalconnector',['CGTKSignalConnector',['../interfaceCGTKSignalConnector.html',1,'']]],
   ['cgtksignaldata',['CGTKSignalData',['../interfaceCGTKSignalData.html',1,'']]],
+  ['cgtktypewrapper',['CGTKTypeWrapper',['../interfaceCGTKTypeWrapper.html',1,'']]],
   ['cgtkutil',['CGTKUtil',['../interfaceCGTKUtil.html',1,'']]]
 ];
