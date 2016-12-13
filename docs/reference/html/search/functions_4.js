@@ -1,13 +1,18 @@
 var searchData=
 [
-  ['generateclassfilesfromapi_3a',['generateClassFilesFromApi:',['../interfaceGir2Objc.html#a630566f531010cef2060200ad9642aab',1,'Gir2Objc']]],
-  ['generateclassfilesfromnamespace_3a',['generateClassFilesFromNamespace:',['../interfaceGir2Objc.html#a59acd775c0e518fba70529921b0c37c2',1,'Gir2Objc']]],
-  ['generatecparameterliststring_3a',['generateCParameterListString:',['../interfaceCGTKClassWriter.html#a3a929e704130d4b935e225504c52cf68',1,'CGTKClassWriter']]],
-  ['generatedocumentationformethod_3a',['generateDocumentationForMethod:',['../interfaceCGTKClassWriter.html#a98f319a17612a5ad4e8fbfda8cc29213',1,'CGTKClassWriter']]],
-  ['generatefilesforclass_3aindir_3a',['generateFilesForClass:inDir:',['../interfaceCGTKClassWriter.html#a57fa05462a191f3e586a2fdb90e19eea',1,'CGTKClassWriter']]],
-  ['generatelicense_3a',['generateLicense:',['../interfaceCGTKClassWriter.html#ae72f4933ae2ec6632767bf350eabd1a6',1,'CGTKClassWriter']]],
-  ['getfunctioncallforconstructoroftype_3awithconstructor_3a',['getFunctionCallForConstructorOfType:withConstructor:',['../interfaceCGTKUtil.html#a04c3c02144195e89725987d84e3a43dd',1,'CGTKUtil']]],
-  ['getwidgetfrombuilder_3awithname_3a',['getWidgetFromBuilder:withName:',['../interfaceCGTKBaseBuilder.html#a1548810c4713fa8238d1207e1290f72f',1,'CGTKBaseBuilder']]],
-  ['globalconfigvaluefor_3a',['globalConfigValueFor:',['../interfaceCGTKUtil.html#afe1abc378bd33c556292d5a42892c713',1,'CGTKUtil']]],
-  ['gobject',['GOBJECT',['../interfaceCGTKBase.html#a07553be10a943fead663d4b3f5ed791d',1,'CGTKBase']]]
+  ['enablemodeldragdestwithtargets_3aandntargets_3aandactions_3a',['enableModelDragDestWithTargets:andNtargets:andActions:',['../interfaceCGTKIconView.html#ac078d8ade41b0b34eaa65d9a5b1bc267',1,'CGTKIconView::enableModelDragDestWithTargets:andNtargets:andActions:()'],['../interfaceCGTKTreeView.html#a9a608deda1d95cd5802bebfb7fc0ad1c',1,'CGTKTreeView::enableModelDragDestWithTargets:andNtargets:andActions:()']]],
+  ['enablemodeldragsourcewithstartbuttonmask_3aandtargets_3aandntargets_3aandactions_3a',['enableModelDragSourceWithStartButtonMask:andTargets:andNtargets:andActions:',['../interfaceCGTKIconView.html#a66f119d92e6ea51d6326bf45690fef41',1,'CGTKIconView::enableModelDragSourceWithStartButtonMask:andTargets:andNtargets:andActions:()'],['../interfaceCGTKTreeView.html#a58fb0afffbdab847c883e02564016248',1,'CGTKTreeView::enableModelDragSourceWithStartButtonMask:andTargets:andNtargets:andActions:()']]],
+  ['ensurestyle',['ensureStyle',['../interfaceCGTKWidget.html#a8b2ec87d85e38b93f9967b2bc6c97654',1,'CGTKWidget']]],
+  ['enter',['enter',['../interfaceCGTKButton.html#a13d8d5e313c8ab6a2f484766699f3bef',1,'CGTKButton']]],
+  ['entry',['ENTRY',['../interfaceCGTKEntry.html#a9b076008b7b531c3b3d0764c4a471f5e',1,'CGTKEntry']]],
+  ['errorbell',['errorBell',['../interfaceCGTKWidget.html#acc695bd0aa1492eaa06e7578e9856a47',1,'CGTKWidget']]],
+  ['event_3a',['event:',['../interfaceCGTKWidget.html#a82a32d0f60474b95112dfdbbd5524d76',1,'CGTKWidget']]],
+  ['eventbox',['EVENTBOX',['../interfaceCGTKEventBox.html#a0607c59c577e665646943180e189025b',1,'CGTKEventBox']]],
+  ['expandall',['expandAll',['../interfaceCGTKTreeView.html#a50eb1fba92b6c8eb51fdcfe08f551a1a',1,'CGTKTreeView']]],
+  ['expander',['EXPANDER',['../interfaceCGTKExpander.html#ae046d34b38e47d4c556aeddd7d5911c7',1,'CGTKExpander']]],
+  ['expandrowwithpath_3aandopenall_3a',['expandRowWithPath:andOpenAll:',['../interfaceCGTKTreeView.html#ae9a6b4a661c3b97cd6251523bf26a1ed',1,'CGTKTreeView']]],
+  ['expandtopath_3a',['expandToPath:',['../interfaceCGTKTreeView.html#ace4e19a75e593432443f471193f62cfe',1,'CGTKTreeView']]],
+  ['exposeobjectwithname_3aandobject_3a',['exposeObjectWithName:andObject:',['../interfaceCGTKBuilder.html#a0d8b40d57c9218aaf625410c610df982',1,'CGTKBuilder']]],
+  ['extraimports_3a',['extraImports:',['../interfaceCGTKUtil.html#aff89985fa71efcf2ffef4e69253782a9',1,'CGTKUtil']]],
+  ['extramethods_3a',['extraMethods:',['../interfaceCGTKUtil.html#a11b4b977f0deb7657ce20d2749c77034',1,'CGTKUtil']]]
 ];

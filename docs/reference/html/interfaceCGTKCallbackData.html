@@ -94,7 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><code>#import &lt;<a class="el" href="CGTKCallbackData_8h_source.html">CGTKCallbackData.h</a>&gt;</code></p>
+<p><code>#import &lt;<a class="el" href="BaseClasses_2CGTKCallbackData_8h_source.html">CGTKCallbackData.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for CGTKCallbackData:</div>
 <div class="dyncontent">
@@ -116,9 +116,21 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a1d5aed4e697c3e5ab31282c66945548b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6335b501e1dba7d419c48550773ce4b3"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interfaceCGTKCallbackData.html#a6335b501e1dba7d419c48550773ce4b3">setSel:</a></td></tr>
 <tr class="separator:a6335b501e1dba7d419c48550773ce4b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b4e180f46821571aad7557fb3a53232"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interfaceCGTKCallbackData.html#a2b4e180f46821571aad7557fb3a53232">initWithObject:andSEL:</a></td></tr>
+<tr class="separator:a2b4e180f46821571aad7557fb3a53232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f1097d43ca57bc8eb8bb470f2cf603"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interfaceCGTKCallbackData.html#ae8f1097d43ca57bc8eb8bb470f2cf603">object</a></td></tr>
+<tr class="separator:ae8f1097d43ca57bc8eb8bb470f2cf603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21922d99f82c23a850d2073e2589b609"><td class="memItemLeft" align="right" valign="top">(SEL)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interfaceCGTKCallbackData.html#a21922d99f82c23a850d2073e2589b609">sel</a></td></tr>
+<tr class="separator:a21922d99f82c23a850d2073e2589b609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d5aed4e697c3e5ab31282c66945548b"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interfaceCGTKCallbackData.html#a1d5aed4e697c3e5ab31282c66945548b">setObject:</a></td></tr>
+<tr class="separator:a1d5aed4e697c3e5ab31282c66945548b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6335b501e1dba7d419c48550773ce4b3"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interfaceCGTKCallbackData.html#a6335b501e1dba7d419c48550773ce4b3">setSel:</a></td></tr>
+<tr class="separator:a6335b501e1dba7d419c48550773ce4b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Class Methods</h2></td></tr>
+<tr class="memitem:ac1afbb8eb49e4273a2aceae0885308ac"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interfaceCGTKCallbackData.html#ac1afbb8eb49e4273a2aceae0885308ac">withObject:andSEL:</a></td></tr>
+<tr class="separator:ac1afbb8eb49e4273a2aceae0885308ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1afbb8eb49e4273a2aceae0885308ac"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interfaceCGTKCallbackData.html#ac1afbb8eb49e4273a2aceae0885308ac">withObject:andSEL:</a></td></tr>
 <tr class="separator:ac1afbb8eb49e4273a2aceae0885308ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -134,6 +146,41 @@ SEL&#160;</td><td class="memItemRight" valign="bottom"><b>_sel</b></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Holds object and selector info for gobject signal callbacks </p>
 </div><h2 class="groupheader">Method Documentation</h2>
+<a class="anchor" id="a2b4e180f46821571aad7557fb3a53232"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithObject: </td>
+          <td></td>
+          <td class="paramtype">(id)&#160;</td>
+          <td class="paramname"><em>obj</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">andSEL:</td>
+          <td></td>
+          <td class="paramtype">(SEL)&#160;</td>
+          <td class="paramname"><em>sel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates and returns a new instance of <a class="el" href="interfaceCGTKCallbackData.html">CGTKCallbackData</a> holding the object and the selector.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>The object to hold</td></tr>
+    <tr><td class="paramname">sel</td><td>The selector to hold</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a new <a class="el" href="interfaceCGTKCallbackData.html">CGTKCallbackData</a> </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a2b4e180f46821571aad7557fb3a53232"></a>
 <div class="memitem">
 <div class="memproto">
@@ -185,6 +232,38 @@ SEL&#160;</td><td class="memItemRight" valign="bottom"><b>_sel</b></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae8f1097d43ca57bc8eb8bb470f2cf603"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) object </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets the held object </p>
+
+</div>
+</div>
+<a class="anchor" id="a21922d99f82c23a850d2073e2589b609"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (SEL) sel </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets the held selector </p>
+
+</div>
+</div>
 <a class="anchor" id="a21922d99f82c23a850d2073e2589b609"></a>
 <div class="memitem">
 <div class="memproto">
@@ -218,6 +297,52 @@ SEL&#160;</td><td class="memItemRight" valign="bottom"><b>_sel</b></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">object</td><td>The object to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1d5aed4e697c3e5ab31282c66945548b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setObject: </td>
+          <td></td>
+          <td class="paramtype">(id)&#160;</td>
+          <td class="paramname"><em>object</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the held object</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>The object to set </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6335b501e1dba7d419c48550773ce4b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setSel: </td>
+          <td></td>
+          <td class="paramtype">(SEL)&#160;</td>
+          <td class="paramname"><em>sel</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the held selector</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sel</td><td>The selector to set </td></tr>
   </table>
   </dd>
 </dl>
@@ -283,13 +408,49 @@ SEL&#160;</td><td class="memItemRight" valign="bottom"><b>_sel</b></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ac1afbb8eb49e4273a2aceae0885308ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (id) withObject: </td>
+          <td></td>
+          <td class="paramtype">(id)&#160;</td>
+          <td class="paramname"><em>obj</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">andSEL:</td>
+          <td></td>
+          <td class="paramtype">(SEL)&#160;</td>
+          <td class="paramname"><em>sel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates and returns a new instance of <a class="el" href="interfaceCGTKCallbackData.html">CGTKCallbackData</a> holding the object and the selector.</p>
+<p>Note this returned instance is autoreleased.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td>The object to hold</td></tr>
+    <tr><td class="paramname">sel</td><td>The selector to hold</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a new <a class="el" href="interfaceCGTKCallbackData.html">CGTKCallbackData</a> </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="CGTKCallbackData_8h_source.html">CGTKCallbackData.h</a></li>
+<li><a class="el" href="BaseClasses_2CGTKCallbackData_8h_source.html">BaseClasses/CGTKCallbackData.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 12 2016 19:54:26 for CoreGTKGen by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 12 2016 20:57:36 for CoreGTKGen by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

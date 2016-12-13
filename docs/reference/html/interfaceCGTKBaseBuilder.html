@@ -92,7 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><code>#import &lt;<a class="el" href="CGTKBaseBuilder_8h_source.html">CGTKBaseBuilder.h</a>&gt;</code></p>
+<p><code>#import &lt;<a class="el" href="BaseClasses_2CGTKBaseBuilder_8h_source.html">CGTKBaseBuilder.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for CGTKBaseBuilder:</div>
 <div class="dyncontent">
@@ -108,11 +108,17 @@ Class Methods</h2></td></tr>
 <tr class="separator:a039bc8578f34bfee8d2fbea969042085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79274c18326ae2ec031a70cc70e8c2a0"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interfaceCGTKBaseBuilder.html#a79274c18326ae2ec031a70cc70e8c2a0">connectSignalsToObjectsWithBuilder:andSignalDictionary:</a></td></tr>
 <tr class="separator:a79274c18326ae2ec031a70cc70e8c2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1548810c4713fa8238d1207e1290f72f"><td class="memItemLeft" align="right" valign="top">(CGTKWidget *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interfaceCGTKBaseBuilder.html#a1548810c4713fa8238d1207e1290f72f">getWidgetFromBuilder:withName:</a></td></tr>
+<tr class="memitem:a1548810c4713fa8238d1207e1290f72f"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interfaceCGTKWidget.html">CGTKWidget</a> *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interfaceCGTKBaseBuilder.html#a1548810c4713fa8238d1207e1290f72f">getWidgetFromBuilder:withName:</a></td></tr>
+<tr class="separator:a1548810c4713fa8238d1207e1290f72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a039bc8578f34bfee8d2fbea969042085"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interfaceCGTKBaseBuilder.html#a039bc8578f34bfee8d2fbea969042085">setDebug:</a></td></tr>
+<tr class="separator:a039bc8578f34bfee8d2fbea969042085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79274c18326ae2ec031a70cc70e8c2a0"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interfaceCGTKBaseBuilder.html#a79274c18326ae2ec031a70cc70e8c2a0">connectSignalsToObjectsWithBuilder:andSignalDictionary:</a></td></tr>
+<tr class="separator:a79274c18326ae2ec031a70cc70e8c2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1548810c4713fa8238d1207e1290f72f"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interfaceCGTKWidget.html">CGTKWidget</a> *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interfaceCGTKBaseBuilder.html#a1548810c4713fa8238d1207e1290f72f">getWidgetFromBuilder:withName:</a></td></tr>
 <tr class="separator:a1548810c4713fa8238d1207e1290f72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>CGTKBuilder adds additional functionality to GtkBuilder </p>
+<div class="textblock"><p><a class="el" href="interfaceCGTKBuilder.html">CGTKBuilder</a> adds additional functionality to GtkBuilder </p>
 </div><h2 class="groupheader">Method Documentation</h2>
 <a class="anchor" id="a79274c18326ae2ec031a70cc70e8c2a0"></a>
 <div class="memitem">
@@ -121,7 +127,7 @@ Class Methods</h2></td></tr>
         <tr>
           <td class="memname">+ (void) connectSignalsToObjectsWithBuilder: </td>
           <td></td>
-          <td class="paramtype">(CGTKBuilder *)&#160;</td>
+          <td class="paramtype">(<a class="el" href="interfaceCGTKBuilder.html">CGTKBuilder</a> *)&#160;</td>
           <td class="paramname"><em>builder</em></td>
         </tr>
         <tr>
@@ -142,7 +148,43 @@ Class Methods</h2></td></tr>
 <p>[builder connectSignalsToObjects:dict];</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">builder</td><td>A CGTKBuilder to use while attaching signals</td></tr>
+    <tr><td class="paramname">builder</td><td>A <a class="el" href="interfaceCGTKBuilder.html">CGTKBuilder</a> to use while attaching signals</td></tr>
+    <tr><td class="paramname">objectSignalDictionary</td><td>A dictionary mapping CallbackData objects to NSString signal names </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a79274c18326ae2ec031a70cc70e8c2a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) connectSignalsToObjectsWithBuilder: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interfaceCGTKBuilder.html">CGTKBuilder</a> *)&#160;</td>
+          <td class="paramname"><em>builder</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">andSignalDictionary:</td>
+          <td></td>
+          <td class="paramtype">(NSDictionary *)&#160;</td>
+          <td class="paramname"><em>objectSignalDictionary</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Similar to the other connect signals functions, this takes a dictionary key'd on CallbackData objects (configured with class/selectors) and their associated signals as values and connects them accordingly.</p>
+<p>Example usage: NSDictionary *dict = [[NSDictionary alloc] initWithObjectsAndKeys: [CallbackData withObject:[<a class="el" href="interfaceCGTK.html">CGTK</a> class] andSEL:(endMainLoop)], "mainQuit", [CallbackData withObject:button andSEL:(clicked)], "on_button1_activate", [CallbackData withObject:button andSEL:(clicked)], "on_button2_clicked", nil];</p>
+<p>[builder connectSignalsToObjects:dict];</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">builder</td><td>A <a class="el" href="interfaceCGTKBuilder.html">CGTKBuilder</a> to use while attaching signals</td></tr>
     <tr><td class="paramname">objectSignalDictionary</td><td>A dictionary mapping CallbackData objects to NSString signal names </td></tr>
   </table>
   </dd>
@@ -155,9 +197,9 @@ Class Methods</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">+ (CGTKWidget *) getWidgetFromBuilder: </td>
+          <td class="memname">+ (<a class="el" href="interfaceCGTKWidget.html">CGTKWidget</a> *) getWidgetFromBuilder: </td>
           <td></td>
-          <td class="paramtype">(CGTKBuilder *)&#160;</td>
+          <td class="paramtype">(<a class="el" href="interfaceCGTKBuilder.html">CGTKBuilder</a> *)&#160;</td>
           <td class="paramname"><em>builder</em></td>
         </tr>
         <tr>
@@ -173,7 +215,7 @@ Class Methods</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Attempts to get the object witht he name returning it as a CGTKWidget. If the object is not found or not compatible with CGTKWidget this will return nil.</p>
+<p>Attempts to get the object witht he name returning it as a <a class="el" href="interfaceCGTKWidget.html">CGTKWidget</a>. If the object is not found or not compatible with <a class="el" href="interfaceCGTKWidget.html">CGTKWidget</a> this will return nil.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">builder</td><td>the builder to get the widget from</td></tr>
@@ -181,7 +223,59 @@ Class Methods</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the CGTKWidget or nil </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="interfaceCGTKWidget.html">CGTKWidget</a> or nil </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1548810c4713fa8238d1207e1290f72f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (<a class="el" href="interfaceCGTKWidget.html">CGTKWidget</a> *) getWidgetFromBuilder: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interfaceCGTKBuilder.html">CGTKBuilder</a> *)&#160;</td>
+          <td class="paramname"><em>builder</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">withName:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Attempts to get the object witht he name returning it as a <a class="el" href="interfaceCGTKWidget.html">CGTKWidget</a>. If the object is not found or not compatible with <a class="el" href="interfaceCGTKWidget.html">CGTKWidget</a> this will return nil.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">builder</td><td>the builder to get the widget from</td></tr>
+    <tr><td class="paramname">name</td><td>the name of the object to return</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="interfaceCGTKWidget.html">CGTKWidget</a> or nil </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a039bc8578f34bfee8d2fbea969042085"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (void) setDebug: </td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>debugEnabled</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>When enabled this builder will print out signal connection debug info </p>
 
 </div>
 </div>
@@ -203,12 +297,12 @@ Class Methods</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="CGTKBaseBuilder_8h_source.html">CGTKBaseBuilder.h</a></li>
+<li><a class="el" href="BaseClasses_2CGTKBaseBuilder_8h_source.html">BaseClasses/CGTKBaseBuilder.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 12 2016 19:54:26 for CoreGTKGen by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Dec 12 2016 20:57:36 for CoreGTKGen by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
