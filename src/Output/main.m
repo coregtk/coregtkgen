@@ -105,7 +105,7 @@ int main(int argc, char *argv[])
 	[window setBorderWidth:10];
 	
 	/* Sets the title text of the window */
-	[window setTitle:@"Now supporting GTK+ 3.18!"];
+	[window setTitle:@"Now supporting GTK+ 3.22!"];
 	
 	/* Sets the default size to 400x300 */	
 	[window setDefaultSizeWithWidth:400 andHeight:300];
