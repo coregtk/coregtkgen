@@ -2,6 +2,9 @@
 	CGTKApplication = (
 		"\"CoreGTK/CGTKWindow.h\""
 	);
+	GtkBuilder = (
+		"\"CoreGTK/CGTKWidget.h\""
+	);
 	CGTKClipboard = (
 		"\"CoreGTK/CGTKTextBuffer.h\""
 	);
