@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['valuefromstringtypewithtype_3aandstring_3aandvalue_3aanderr_3a',['valueFromStringTypeWithType:andString:andValue:andErr:',['../interfaceCGTKBuilder.html#a7ee7b150f9c2e38412a2d192d8a90b2c',1,'CGTKBuilder']]],
-  ['valuefromstringwithpspec_3aandstring_3aandvalue_3aanderr_3a',['valueFromStringWithPspec:andString:andValue:andErr:',['../interfaceCGTKBuilder.html#a905ea41d9601fb8a306c0c3630755ff9',1,'CGTKBuilder']]],
+  ['valuefromstringtypewithtype_3aandstring_3aandvalue_3aanderr_3a',['valueFromStringTypeWithType:andString:andValue:andErr:',['../interfaceCGTKBuilder.html#aa5f6b77e59c98ca88257fa2f1aa86402',1,'CGTKBuilder']]],
+  ['valuefromstringwithpspec_3aandstring_3aandvalue_3aanderr_3a',['valueFromStringWithPspec:andString:andValue:andErr:',['../interfaceCGTKBuilder.html#a12d0cdadc527f41c6f83c5f1910cbb83',1,'CGTKBuilder']]],
   ['vbox',['VBOX',['../interfaceCGTKVBox.html#a7d9e1a8595fe910f96828401b8522920',1,'CGTKVBox']]],
   ['vbuttonbox',['VBUTTONBOX',['../interfaceCGTKVButtonBox.html#a6fe190357e67f886773de1678c88b4cc',1,'CGTKVButtonBox']]],
   ['viewport',['VIEWPORT',['../interfaceCGTKViewport.html#a646dee8218f19dbb1808c203f48c9840',1,'CGTKViewport']]],

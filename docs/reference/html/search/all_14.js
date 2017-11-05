@@ -16,7 +16,7 @@ var searchData=
   ['toolitem',['TOOLITEM',['../interfaceCGTKToolItem.html#a6c2908b14a786041574ecbdc6e77122a',1,'CGTKToolItem']]],
   ['toolitemgroup',['TOOLITEMGROUP',['../interfaceCGTKToolItemGroup.html#a85187cf293b5aec5279b77cc2111c3fc',1,'CGTKToolItemGroup']]],
   ['toolpalette',['TOOLPALETTE',['../interfaceCGTKToolPalette.html#ae0bdb47b9216b66cee3305bd3ceb6535',1,'CGTKToolPalette']]],
-  ['translatecoordinateswithdestwidget_3aandsrcx_3aandsrcy_3aanddestx_3aanddesty_3a',['translateCoordinatesWithDestWidget:andSrcX:andSrcY:andDestX:andDestY:',['../interfaceCGTKWidget.html#ac34b85a900513998d062881371445adc',1,'CGTKWidget']]],
+  ['translatecoordinateswithdestwidget_3aandsrcx_3aandsrcy_3aanddestx_3aanddesty_3a',['translateCoordinatesWithDestWidget:andSrcX:andSrcY:andDestX:andDestY:',['../interfaceCGTKWidget.html#a3fa237e6e9a657ac27fff2fa94128fb2',1,'CGTKWidget']]],
   ['treeview',['TREEVIEW',['../interfaceCGTKTreeView.html#a2ed7a263974700ab9b99869d600c5aea',1,'CGTKTreeView']]],
   ['triggertooltipquery',['triggerTooltipQuery',['../interfaceCGTKWidget.html#a0510c02173a437fdd49d94d562f412b3',1,'CGTKWidget']]],
   ['trimmethodname_3a',['trimMethodName:',['../interfaceCGTKUtil.html#a5eee08784d796ae6d5f00a9e77c30e74',1,'CGTKUtil']]]
