@@ -14,7 +14,7 @@ var searchData=
   ['hbuttonbox',['HBUTTONBOX',['../interfaceCGTKHButtonBox.html#a208c9cd6d4432936847bc3a5ce940907',1,'CGTKHButtonBox']]],
   ['headerbar',['HEADERBAR',['../interfaceCGTKHeaderBar.html#a54a80556abed694fae7f412cf905faa0',1,'CGTKHeaderBar']]],
   ['headerstringfor_3a',['headerStringFor:',['../interfaceCGTKClassWriter.html#a75ecccc7b82f5bbfb38a829f550c244b',1,'CGTKClassWriter']]],
-  ['hide',['hide',['../interfaceCGTKWidget.html#a18eb1d2ff44967a37b0ccdc07533b93a',1,'CGTKWidget']]],
+  ['hide',['hide',['../interfaceCGTKNativeDialog.html#a883e5b9a8f6c17d07cef9b23cb61fffd',1,'CGTKNativeDialog::hide()'],['../interfaceCGTKWidget.html#a18eb1d2ff44967a37b0ccdc07533b93a',1,'CGTKWidget::hide()']]],
   ['hideondelete',['hideOnDelete',['../interfaceCGTKWidget.html#a0c610842d7f05c4cf6f80ca731301075',1,'CGTKWidget']]],
   ['hpaned',['HPANED',['../interfaceCGTKHPaned.html#a8609ef8838f62f3419a2e422c10ac769',1,'CGTKHPaned']]],
   ['hscale',['HSCALE',['../interfaceCGTKHScale.html#a6d6af49fd83acf0d1d6507bd68db74c1',1,'CGTKHScale']]],
