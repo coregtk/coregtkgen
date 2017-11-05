@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['enablemodeldragdestwithtargets_3aandntargets_3aandactions_3a',['enableModelDragDestWithTargets:andNtargets:andActions:',['../interfaceCGTKIconView.html#ac078d8ade41b0b34eaa65d9a5b1bc267',1,'CGTKIconView::enableModelDragDestWithTargets:andNtargets:andActions:()'],['../interfaceCGTKTreeView.html#a9a608deda1d95cd5802bebfb7fc0ad1c',1,'CGTKTreeView::enableModelDragDestWithTargets:andNtargets:andActions:()']]],
-  ['enablemodeldragsourcewithstartbuttonmask_3aandtargets_3aandntargets_3aandactions_3a',['enableModelDragSourceWithStartButtonMask:andTargets:andNtargets:andActions:',['../interfaceCGTKIconView.html#a66f119d92e6ea51d6326bf45690fef41',1,'CGTKIconView::enableModelDragSourceWithStartButtonMask:andTargets:andNtargets:andActions:()'],['../interfaceCGTKTreeView.html#a58fb0afffbdab847c883e02564016248',1,'CGTKTreeView::enableModelDragSourceWithStartButtonMask:andTargets:andNtargets:andActions:()']]],
+  ['enablemodeldragdestwithtargets_3aandntargets_3aandactions_3a',['enableModelDragDestWithTargets:andNtargets:andActions:',['../interfaceCGTKIconView.html#a0206e1537cea44831d73c344d7f3fec5',1,'CGTKIconView::enableModelDragDestWithTargets:andNtargets:andActions:()'],['../interfaceCGTKTreeView.html#a1daa5df727a0f6bed427d8d4a3e05c0b',1,'CGTKTreeView::enableModelDragDestWithTargets:andNtargets:andActions:()']]],
+  ['enablemodeldragsourcewithstartbuttonmask_3aandtargets_3aandntargets_3aandactions_3a',['enableModelDragSourceWithStartButtonMask:andTargets:andNtargets:andActions:',['../interfaceCGTKIconView.html#a71f84228becf2bd7b2695d239a98454a',1,'CGTKIconView::enableModelDragSourceWithStartButtonMask:andTargets:andNtargets:andActions:()'],['../interfaceCGTKTreeView.html#a8c5b23a3fc83d5bf5bb538e217560880',1,'CGTKTreeView::enableModelDragSourceWithStartButtonMask:andTargets:andNtargets:andActions:()']]],
   ['ensurestyle',['ensureStyle',['../interfaceCGTKWidget.html#a8b2ec87d85e38b93f9967b2bc6c97654',1,'CGTKWidget']]],
   ['enter',['enter',['../interfaceCGTKButton.html#a13d8d5e313c8ab6a2f484766699f3bef',1,'CGTKButton']]],
   ['entry',['ENTRY',['../interfaceCGTKEntry.html#a9b076008b7b531c3b3d0764c4a471f5e',1,'CGTKEntry']]],
@@ -10,9 +10,10 @@ var searchData=
   ['eventbox',['EVENTBOX',['../interfaceCGTKEventBox.html#a0607c59c577e665646943180e189025b',1,'CGTKEventBox']]],
   ['expandall',['expandAll',['../interfaceCGTKTreeView.html#a50eb1fba92b6c8eb51fdcfe08f551a1a',1,'CGTKTreeView']]],
   ['expander',['EXPANDER',['../interfaceCGTKExpander.html#ae046d34b38e47d4c556aeddd7d5911c7',1,'CGTKExpander']]],
-  ['expandrowwithpath_3aandopenall_3a',['expandRowWithPath:andOpenAll:',['../interfaceCGTKTreeView.html#ae9a6b4a661c3b97cd6251523bf26a1ed',1,'CGTKTreeView']]],
+  ['expandrowwithpath_3aandopenall_3a',['expandRowWithPath:andOpenAll:',['../interfaceCGTKTreeView.html#a5f3ff46e2f4faba0a3ad4d3bef5fc58d',1,'CGTKTreeView']]],
   ['expandtopath_3a',['expandToPath:',['../interfaceCGTKTreeView.html#ace4e19a75e593432443f471193f62cfe',1,'CGTKTreeView']]],
-  ['exposeobjectwithname_3aandobject_3a',['exposeObjectWithName:andObject:',['../interfaceCGTKBuilder.html#a0d8b40d57c9218aaf625410c610df982',1,'CGTKBuilder']]],
+  ['exposeobjectwithname_3aandobject_3a',['exposeObjectWithName:andObject:',['../interfaceCGTKBuilder.html#a11f82bf66244d54fe9c137a362333476',1,'CGTKBuilder']]],
+  ['extendwithtemplatewithwidget_3aandtemplatetype_3aandbuffer_3aandlength_3aanderr_3a',['extendWithTemplateWithWidget:andTemplateType:andBuffer:andLength:andErr:',['../interfaceCGTKBuilder.html#a148bc3bfb7e62128c05e7ab02386270b',1,'CGTKBuilder']]],
   ['extraimports_3a',['extraImports:',['../interfaceCGTKUtil.html#aff89985fa71efcf2ffef4e69253782a9',1,'CGTKUtil']]],
   ['extramethods_3a',['extraMethods:',['../interfaceCGTKUtil.html#a11b4b977f0deb7657ce20d2749c77034',1,'CGTKUtil']]]
 ];
