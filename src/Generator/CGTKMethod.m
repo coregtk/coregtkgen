@@ -160,6 +160,7 @@
 		|| [[self cName] isEqualToString:@"gtk_builder_add_objects_from_file"]
 		|| [[self cName] isEqualToString:@"gtk_builder_add_objects_from_resource"]
 		|| [[self cName] isEqualToString:@"gtk_builder_add_objects_from_string"]
+		|| [[self cName] isEqualToString:@"gtk_builder_extend_with_template"]
 		|| [[self cName] isEqualToString:@"gtk_builder_value_from_string"]
 		|| [[self cName] isEqualToString:@"gtk_builder_value_from_string_type"]
 		)
